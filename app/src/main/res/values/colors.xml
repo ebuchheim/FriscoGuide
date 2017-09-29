@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_red">#E63629</color>
+    <color name="color_dark_red">#BD2D22</color>
+    <color name="color_accent_white">#FDFFFC</color>
+    <color name="color_accent_light_gray">#D6D8D6</color>
+    <color name="color_accent_dark_gray">#424341</color>
+    <color name="color_international_orange">#BB3636</color>
+    <color name="color_mordant_red">#AE0201</color>
+</resources>

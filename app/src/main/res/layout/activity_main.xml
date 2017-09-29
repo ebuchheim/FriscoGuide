@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dark_red"
+    android:orientation="vertical"
+    tools:context="com.example.android.friscoguide.MainActivity">
+
+    <!-- Numbers category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_red">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/restaurants_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/food" />
+
+            <TextView
+                android:id="@+id/restaurants"
+                style="@style/CategoryStyle"
+                android:layout_toRightOf="@id/restaurants_icon"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/first_title_text_view" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!-- Family category -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_dark_red">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bars_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/bars" />
+
+            <TextView
+                android:id="@+id/bars"
+                style="@style/CategoryStyle"
+                android:layout_toRightOf="@+id/bars_icon"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/second_title_text_view" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!-- Colors category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_mordant_red">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/attractions_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/attractions" />
+
+            <TextView
+                android:id="@+id/attractions"
+                style="@style/CategoryStyle"
+                android:layout_toRightOf="@id/attractions_icon"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/third_title_text_view" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!-- Phrases category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_international_orange">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/parks_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/parks" />
+
+            <TextView
+                android:id="@+id/parks"
+                style="@style/CategoryStyle"
+                android:layout_toRightOf="@id/parks_icon"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/fourth_title_text_view" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frisco" />
+</LinearLayout>

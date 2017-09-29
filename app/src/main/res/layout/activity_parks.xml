@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_red"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/button_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="115dp"
+            android:background="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/button_food"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/button_back"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/food" />
+
+        <ImageView
+            android:id="@+id/button_bars"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/button_food"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bars" />
+
+        <ImageView
+            android:id="@+id/button_attractions"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/button_bars"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/attractions" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_dark_red"
+        android:orientation="vertical"
+        tools:context="com.example.android.friscoguide.Parks"></ListView>
+</LinearLayout>
+
